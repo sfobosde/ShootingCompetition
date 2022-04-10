@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="styles/img/icon.jpg">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header-block ">
+            <nav class="nav container">
+
+                <ul class="nav__list">
+                    <li id='competitionInfo' class="nav__list__item">О мероприятии</li>
+                    <li id='competitionProtocoles' class="nav__list__item">Протоколы соревнований</li>
+                    <a href="https://www.instagram.com/" id='contacts' class="nav__list__item"><li>Контакты</li></a>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="header-content">
+            <p class="header-content__text">
+                Будь первым!
+            </p>
+            <div id="joinToCompButton" class="header-conten__joinButton">Оставить заявку</div>
+        </div>
+
+        <form id="registration" class="decor">
+            <div class="form-inner">
+
+                <h3>Подать заявку на участие</h3>
+
+                <input id="surname" type="text" placeholder="Фамилия">
+                <input id="firstName" type="text" placeholder="Имя">
+                <input id="patronic" type="text" placeholder="Отчество">
+                <input id="birthDate" type="date" placeholder="Дата рождения">
+                <input id="email" type="email" placeholder="Email">
+                <input id="submit" type="submit" value="Отправить">
+
+            </div>
+        </form>   
+    </header>
+
+    <header class="compInfo">
+        <div class="aboutComp">
+            <div id="cityList" class="compCities__list">
+                <ol id="compCity" class="compCity">
+                    Города-участники:
+                </ol>
+            </div>
+        </div>
+    </header>
+
+    <header class="compProtocoles">
+        <div class="protocoles">
+            <h1>Результаты соревнований:</h1>
+
+            <table id="compResults" border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <th>ФИО участника</th>
+                    <th>Арбалет</th>
+                    <th>Пистолет</th>
+                    <th>Позиция</th>
+                </tr>
+            </table>
+        </div>
+        
+    </header>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/date.js"></script>
+<script src="scripts/registration.js"></script>
+
+</html>
